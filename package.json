@@ -5,16 +5,27 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-native-web": "^0.11.7",
+    "react-scripts": "3.1.1",
+    "react-snap": "^1.23.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "reactSnap": {
+    "source": "build",
+    "asyncScriptTags": true,
+    "skipThirdPartyRequests": true,
+    "include": [
+      "/"
+    ]
   },
   "browserslist": {
     "production": [
