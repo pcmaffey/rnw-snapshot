@@ -21,7 +21,6 @@
   },
   "reactSnap": {
     "source": "build",
-    "asyncScriptTags": true,
     "skipThirdPartyRequests": true,
     "include": [
       "/"
